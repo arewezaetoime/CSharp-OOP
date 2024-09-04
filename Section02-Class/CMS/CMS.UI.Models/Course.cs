@@ -1,8 +1,9 @@
-﻿using System;
-
-public class Class1
+﻿namespace CMS.UI.Models
 {
-	public Class1()
-	{
-	}
+    public class Course
+    {
+        public Course()
+        {
+        }
+    }
 }
