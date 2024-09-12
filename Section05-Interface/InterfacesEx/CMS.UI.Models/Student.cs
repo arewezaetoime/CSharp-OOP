@@ -2,15 +2,12 @@
 
 namespace CMS.UI.Models
 {
-    public class Student
+    public class Student : IStudent
     {
         // Class fields
-        public string FirstName = default;
-        public string LastName = string.Empty;
-        public int StudentId = 10000;
-
-        // const field
-        //public const int MaxEnrolledCourses = 3;
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public int StudentId = 0;
 
         // readonly field
         public readonly int MaxEnrolledCourses = 3;
@@ -18,6 +15,7 @@ namespace CMS.UI.Models
         // Static field
         public static int MaxBooksAllowed = 6;
 
+    
         // Student constructor
         public Student()
         {
@@ -40,17 +38,8 @@ namespace CMS.UI.Models
         ~Student()
         {
             // Cleanup code goes here. 
-
         }
 
-        public int GetId()
-        {
-            return StudentId;
-        }
-
-        public string GetFullName()
-        {
-            return $"{FirstName} {LastName}";
-        }
+        
     }
 }
