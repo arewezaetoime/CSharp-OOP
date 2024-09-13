@@ -7,10 +7,9 @@ namespace CMS.UI.Models
         public int Id { get; private set; }
         public int WorkingHoursPerWeek { get; set; }
 
-        public Staff(string firstName, string LastName) : base(firstName, LastName)
+        public Staff(string firstName, string LastName) 
+            : base(firstName, LastName)
         {
-            FirstName = firstName;
-            this.LastName = LastName;
             WorkingHoursPerWeek = 40;
         }
       
@@ -28,7 +27,7 @@ namespace CMS.UI.Models
         //     FirstName = firstName;
         // }
 
-        protected internal void UpdateInfo(string firstName, string lastName = "")
+        private protected void UpdateInfo(string firstName, string lastName = "")
         {
             FirstName = firstName;
             LastName = lastName;

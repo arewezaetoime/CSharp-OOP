@@ -33,8 +33,7 @@ namespace CMS.Application
                 List<string> lstHobbies = student3.Hobbies;
             }
 
-            Person person2 = new Staff("Mariika", "Smith");
-
+            Person person2 = new Staff("Mary", "Smith");
             if (person2 is Staff)
             {
                 Staff staff = person2 as Staff;

@@ -13,10 +13,10 @@ namespace CMS.UI.Models
         {
             Console.WriteLine("Calling Person.Person(string, string)");
 
-            this.FirstName = firstName;
-            this.LastName = lastName;
+            FirstName = firstName;
+            LastName = lastName;
         }
-        
+
         protected internal string FirstName { get; set; }
         public string LastName { get; set; }
         public virtual string GetFullName()
